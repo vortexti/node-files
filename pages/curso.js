@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 function Home() {
     return <div><h1>Site em reconstrução</h1>
+    <a href="/sobre">Acessar Página sobre</a>
     </div>
 }
 
