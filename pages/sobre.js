@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 function sobre() {
     return <div><h1>Site em reconstrução</h1>
-    <Link href="/">
+    <Link href="/curso">
         <a>Acessar Página home</a>
     </Link>
     </div>
