@@ -1,9 +1,21 @@
 import { useState } from 'react';
 
-function Sobre() {
-    return <div><h1>Pagina sobre</h1>
-    <a href="/curso">Acessar Página Home</a>
+function Home() {
+    return <div><h1>Site em reconstrução</h1>
     </div>
 }
 
-export default Sobre
+function Contador() {
+    const [Contador,setContador] = useState(1);
+    function adicionarContador(){
+        setContador(Contador + 1);
+    }
+    return (
+        <div>
+            <div>{Contador}</div>
+            <button onClick={adicionarContador}>Adiciona Contador</button>
+        </div>
+    )
+
+}
+export default Home
