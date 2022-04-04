@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
 function Home() {
-    return <div><h1>Home</h1>
-    <Contador />
+    return <div><h1>Site em reconstrução</h1>
     </div>
 }
 
