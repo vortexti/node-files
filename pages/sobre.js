@@ -1,7 +1,9 @@
 import { useState } from 'react';
-
-function Home() {
+import Link from 'next/link';
+function sobre() {
     return <div><h1>Site em reconstrução</h1>
+    <link href="/">
+        <a>Acessar Página home</a>
     </div>
 }
 
@@ -18,4 +20,4 @@ function Contador() {
     )
 
 }
-export default Home
+export default sobre
