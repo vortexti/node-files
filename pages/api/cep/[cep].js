@@ -6,7 +6,7 @@ async function mikrotik(request, response) {
     const loginmk = process.env.LOGINMIKROTIK;
     const senhamk = process.env.SENHAMIKROTIK;
     const dynamicDate = new Date();
-     const cepresponse = await fetch('https://ws.apicep.com/cep/${cepcorreios}.json');
+     const cepresponse = await fetch('https://ws.apicep.com/cep/${cepcorreios}-000.json');
     //  const mikrotikresponse = await fetch('https://${loginmk}:${senhamk}@168.228.118.228/rest/interface/ether1');
   //   const mikrotikresponse = await fetch('https://webweb:web2021@168.228.118.228/rest/interface/ether1');
      const cepresponseJson = await cepresponse.json();
