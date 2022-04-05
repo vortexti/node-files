@@ -6,11 +6,14 @@ async function mikrotik(request, response) {
    //  const mikrotikresponse = await fetch('https://${loginmk}:${senhamk}@168.228.118.228/rest/interface/ether1');
  //   const mikrotikresponse = await fetch('https://webweb:web2021@168.228.118.228/rest/interface/ether1');
     const mikrotikresponseJson = await mikrotikresponse.json();
-    const resposta = mikrotikresponseJson.city;
-
+    const cidade = mikrotikresponseJson.city;
+    const estado = mikrotikresponseJson.state;
+    const cepcidade = mikrotikresponseJson.code;
     response.json({
         date: dynamicDate.toGMTString(),
-        resposta: resposta,
+        cidade: cidade,
+        estado: estado,
+        cepcidade: cepcidade
     //    mikrotikresponse: mikrotikresponse
     //    mikrotikresponseJson: mikrotikresponseJson
     })
