@@ -1,8 +1,8 @@
 //import { useRouter } from 'next/router';
 
 async function mikrotik(request, response) {
-   // const router = useRouter();
-    //const cepcorreios = router.query.cep;
+    const router = useRouter();
+    const cepcorreios = router.query.cep;
     const loginmk = process.env.LOGINMIKROTIK;
     const senhamk = process.env.SENHAMIKROTIK;
     const dynamicDate = new Date();
@@ -24,7 +24,8 @@ async function mikrotik(request, response) {
          estado: estado,
          cepcidade: cepcidade,
          loginmk : loginmk,
-         senhamk: senhamk
+         senhamk: senhamk,
+         cepcorreios :cepcorreios,
      //    mikrotikresponse: mikrotikresponse
      //    mikrotikresponseJson: mikrotikresponseJson
      })
