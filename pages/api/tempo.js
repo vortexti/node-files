@@ -13,7 +13,9 @@ async function mikrotik(request, response) {
         date: dynamicDate.toGMTString(),
         cidade: cidade,
         estado: estado,
-        cepcidade: cepcidade
+        cepcidade: cepcidade,
+        loginmk : loginmk,
+        senhamk: senhamk
     //    mikrotikresponse: mikrotikresponse
     //    mikrotikresponseJson: mikrotikresponseJson
     })
