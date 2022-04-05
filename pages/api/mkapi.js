@@ -9,6 +9,10 @@ async function mikrotik(request, response) {
     const cidade = cepresponseJson.city;
     const estado = cepresponseJson.state;
     const cepcidade = cepresponseJson.code;
+
+    response.setHeader('Cache-Control', 's-maxage=10, stale-while-revalidate');
+
+
     response.json({
         date: dynamicDate.toGMTString(),
         cidade: cidade,
