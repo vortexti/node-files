@@ -1,8 +1,14 @@
-//import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
+
+//function produtos() {
+   // const router = useRouter();
+  //  const cep = router.query.cep;
+  //  return < div> cep eh: {cep}</div>
+//}
 
 async function mikrotik(request, response) {
-    const router = useRouter();
-    const cepcorreios = router.query.cep;
+    //const router = useRouter()
+   // const cepcorreios = router.query.cep;
     const loginmk = process.env.LOGINMIKROTIK;
     const senhamk = process.env.SENHAMIKROTIK;
     const dynamicDate = new Date();
@@ -25,7 +31,7 @@ async function mikrotik(request, response) {
          cepcidade: cepcidade,
          loginmk : loginmk,
          senhamk: senhamk,
-         cepcorreios :cepcorreios,
+        // cep : cep,
      //    mikrotikresponse: mikrotikresponse
      //    mikrotikresponseJson: mikrotikresponseJson
      })
