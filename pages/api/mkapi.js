@@ -19,8 +19,8 @@ async function mikrotik(request, response) {
       //  estado: estado,
       //  cepcidade: cepcidade,
         loginmk : loginmk,
-        senhamk: senhamk
-        mikrotikresponse: mikrotikresponse
+        senhamk: senhamk,
+        mikrotikresponse: mikrotikresponse,
         mikrotikresponseJson: mikrotikresponseJson
     })
 }
