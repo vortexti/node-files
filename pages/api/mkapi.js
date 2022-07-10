@@ -21,7 +21,7 @@ async function mikrotik(request, response) {
         loginmk : loginmk,
         senhamk: senhamk,
         mikrotikresponse: mikrotikresponse,
-        mikrotikresponseJson: mikrotikresponseJson
+       // mikrotikresponseJson: mikrotikresponseJson
     })
 }
 
